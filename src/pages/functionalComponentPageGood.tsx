@@ -1,17 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import { InputComponent } from '../components/inputComponent';
-import { ContainerComponent } from '../components/containerComponent';
 
-interface IState {
-    value: string,
-    value2: string
-}
-
-interface IProps {
-    mode?: number
-}
-
-function ComponentPage ({ mode } : IProps) {
+function ComponentPage () {
     const [value1, setValue1] = useState('')
     const [value2, setValue2] = useState('')
 
@@ -20,9 +10,8 @@ function ComponentPage ({ mode } : IProps) {
 
     return (
         <div>
-            <ContainerComponent title='Good1' value={value1} onChange={onValue1Change}>
-                <InputComponent title='Bad2' value={value2} onChange={onValue2Change} />
-            </ContainerComponent>
+            <InputComponent title='Good1' value={value1} onChange={onValue1Change} />
+            <InputComponent title='Good2' value={value2} onChange={onValue2Change} />
         </div>
     )
 }

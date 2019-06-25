@@ -27,8 +27,8 @@ class ComponentPage extends React.Component<any, IState> {
     render() {
         return (
             <div>
-                <InputComponent title='Good' value={this.state.value || ''} onChange={this.onFake1Change} />
-                <InputComponent title='Fake2' value={this.state.value2 || ''} onChange={this.onFake2Change} />
+                <InputComponent title='Good1' value={this.state.value || ''} onChange={this.onFake1Change} />
+                <InputComponent title='Good2' value={this.state.value2 || ''} onChange={this.onFake2Change} />
             </div>
         )
     }

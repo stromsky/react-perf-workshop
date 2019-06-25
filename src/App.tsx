@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { ComponentPage } from './pages/functionalComponentPage'
+import { ComponentPage } from './pages/functionalComponentPageGood'
 
 const App: React.FC = () => {
   return (

@@ -16,7 +16,8 @@ export const InputComponent = React.memo(function InputComponent ({ title, value
 
     return (
         <span className='input-component'>
-            <label>{title}<br/>(rendered: {ref.current})</label>
+            <label>{title}<br />(rendered: {ref.current})</label>
+            <br />
             <input value={value || ''} onChange={onValueChange} />
         </span>
     )
